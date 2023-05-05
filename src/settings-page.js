@@ -1,11 +1,18 @@
+// imports 
+import { displayGamePage } from "./game-page.js";
+
+// game settings object
 const gameSettings = {
     playerName: '',
     playerMarker: '',
     difficulty: '',
+    playerScore: 0,
+    computerScore: 0,
+    round: 1,
 };
+export { gameSettings };
 
 // functions
-
 function displaySettingsPage() { 
     const settingsDiv = document.createElement('div');
     settingsDiv.classList.add('settings-div');
@@ -81,7 +88,6 @@ function displaySettingsPage() {
     content.appendChild(settingsDiv);
     startGameBtn.addEventListener('click', () => {
         console.log('Start Game Button Clicked');
-        console.log(gameSettings);
         if (nameInput.value === '') {
             alert('Please enter your name');
             return;
@@ -95,8 +101,9 @@ function displaySettingsPage() {
             return;
         }
         gameSettings.playerName = nameInput.value;
+        console.log(gameSettings);
         content.innerHTML = '';
-        //displayGamePage();
+        displayGamePage();
     }
     );
 }

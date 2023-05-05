@@ -2,4 +2,10 @@
 import './style.css'
 import displayRules from './rules-page.js'
 
-displayRules();
+//delete this
+import { displayGamePage } from "./game-page.js";
+
+// uncomment me
+//displayRules();
+
+displayGamePage();

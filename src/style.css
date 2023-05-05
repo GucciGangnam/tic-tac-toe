@@ -7,6 +7,7 @@ body {
     ) no-repeat fixed;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 html, body {
@@ -52,3 +53,47 @@ html, body {
             box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.60);
         }
 
+/* settings page */
+
+.settings-div { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 10px;
+    padding: 1rem;
+}
+    .name-input{ 
+        font-size: large;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.25);
+        color: black;
+    }
+    .name-input:focus { 
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.80);
+        outline: none;
+    }
+    .name-input::placeholder { 
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .settingsBtn { 
+        background: rgba(255, 255, 255, 0.25);
+        border: none;
+        border-radius: 10px;
+        font-size: large;
+        padding: 0.5rem;
+    }
+        .settingsBtn:hover { 
+            box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.60);
+        }
+        .settingsBtn.selected { 
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.60);
+            color: black;
+        }

@@ -14,8 +14,8 @@ function displaySettingsPage() {
     markerDiv.classList.add('marker-div');
     markerDiv.id = 'marker-div';
         const xMarkerBtn = document.createElement('button');
-        xMarkerBtn.classList.add('x-marker');
-        xMarkerBtn.id = 'x-marker';
+        xMarkerBtn.classList.add('settingsBtn');
+        xMarkerBtn.id = 'x-markerBtn';
         xMarkerBtn.textContent = 'X';
         xMarkerBtn.addEventListener('click', () => {
             console.log('X Marker Button Clicked');
@@ -23,8 +23,8 @@ function displaySettingsPage() {
             oMarkerBtn.classList.remove('selected');
         });
         const oMarkerBtn = document.createElement('button');
-        oMarkerBtn.classList.add('o-marker');
-        oMarkerBtn.id = 'o-marker';
+        oMarkerBtn.classList.add('settingsBtn');
+        oMarkerBtn.id = 'o-markerBtn';
         oMarkerBtn.textContent = 'O';
         oMarkerBtn.addEventListener('click', () => {
             console.log('O Marker Button Clicked');
@@ -37,8 +37,8 @@ function displaySettingsPage() {
     difficultyDiv.classList.add('difficulty-div');
     difficultyDiv.id = 'difficulty-div';
         const easyDifficultyBtn = document.createElement('button');
-        easyDifficultyBtn.classList.add('easy-difficulty');
-        easyDifficultyBtn.id = 'easy-difficulty';
+        easyDifficultyBtn.classList.add('settingsBtn');
+        easyDifficultyBtn.id = 'easy-difficultyBtn';
         easyDifficultyBtn.textContent = 'Easy';
         easyDifficultyBtn.addEventListener('click', () => {
             console.log('Easy Difficulty Button Clicked');
@@ -46,8 +46,8 @@ function displaySettingsPage() {
             hardDifficultyBtn.classList.remove('selected');
         });
         const hardDifficultyBtn = document.createElement('button');
-        hardDifficultyBtn.classList.add('hard-difficulty');
-        hardDifficultyBtn.id = 'hard-difficulty';
+        hardDifficultyBtn.classList.add('settingsBtn');
+        hardDifficultyBtn.id = 'hard-difficultyBtn';
         hardDifficultyBtn.textContent = 'Hard';
         hardDifficultyBtn.addEventListener('click', () => {
             console.log('Hard Difficulty Button Clicked');

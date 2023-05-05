@@ -1,0 +1,13 @@
+body {
+    background: linear-gradient(to top right, 
+      #f892e7,   /* white */
+      #ba29d3,  /* light purple */
+      #9f2be2,   /* violet */   
+      #4B0082    /* deep purple */
+    ) no-repeat fixed;
+    background-size: cover;
+}
+
+html, body {
+    height: 100%;
+}

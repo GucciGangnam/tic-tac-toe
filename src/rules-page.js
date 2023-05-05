@@ -1,3 +1,7 @@
+// imports 
+import displaySettingsPage from './settings-page.js'
+
+// functions 
 function displayRules() { 
     const rulesDiv = document.createElement('div');
     rulesDiv.classList.add('rules-div');
@@ -24,12 +28,17 @@ function displayRules() {
     rulesDiv.appendChild(rulesHeader);
     rulesDiv.appendChild(rulesList);
     //return rulesDiv;
-    const StartGameBtn = document.createElement('button');
-    StartGameBtn.classList.add('start-game-btn');
-    StartGameBtn.id = 'start-game-btn';
-    StartGameBtn.textContent = 'Start Game';
-    rulesDiv.appendChild(StartGameBtn);
+    const okay = document.createElement('button');
+    okay.classList.add('start-game-btn');
+    okay.id = 'start-game-btn';
+    okay.textContent = 'Okay';
+    rulesDiv.appendChild(okay);
     const content = document.getElementById('content');
     content.appendChild(rulesDiv);
+    okay.addEventListener('click', () => {
+        console.log('Okay Button Clicked');
+        content.innerHTML = '';
+        displaySettingsPage();
+    });
 }
 export default displayRules;

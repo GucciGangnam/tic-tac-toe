@@ -6,8 +6,49 @@ body {
       #4B0082    /* deep purple */
     ) no-repeat fixed;
     background-size: cover;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body {
     height: 100%;
 }
+
+.content { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* rules page */ 
+
+.rules-div { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 10px;
+    padding: 1rem;
+}
+    .rules-header { 
+
+    }
+    .rules-list li { 
+        margin-bottom: 1rem;
+    }
+    .start-game-btn { 
+        margin-top: 1rem;
+        background: rgba(255, 255, 255, 0.50);
+        border: none;
+        border-radius: 30px;
+        padding: 15px;
+        cursor: pointer;
+        font-size: large;
+    }
+        .start-game-btn:hover { 
+            box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.60);
+        }
+

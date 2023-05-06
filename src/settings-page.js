@@ -1,16 +1,27 @@
 // imports 
 import { displayGamePage } from "./game-page.js";
+import { displayBanner } from "./game-page.js";
 
 // game settings object *********************** reset all settings to default
 const gameSettings = {
-    playerName: 'Test',
-    playerMarker: 'X',
-    computerMarker: 'O',
-    difficulty: 'Easy',
+    playerName: '',
+    playerMarker: '',
+    computerMarker: '',
+    difficulty: '',
     playerScore: 0,
     computerScore: 0,
     round: 1,
     gameStatus: 'inProgress',
+    resetSettings: function() {
+        this.playerName = "";
+        this.playerMarker = '';
+        this.computerMarker = '';
+        this.difficulty = '';
+        this.playerScore = 0;
+        this.computerScore = 0;
+        this.round = 1;
+        this.gameStatus = 'inProgress';
+    }
 };
 export { gameSettings };
 
@@ -108,6 +119,7 @@ function displaySettingsPage() {
         console.log(gameSettings);
         content.innerHTML = '';
         displayGamePage();
+        displayBanner();
     }
     );
 }

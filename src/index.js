@@ -1,11 +1,16 @@
 // imports 
 import './style.css'
-import displayRules from './rules-page.js'
+import { displayRules } from './rules-page.js'
 
-//delete this
-import { displayGamePage } from "./game-page.js";
+
+//delete me
+//import { displayBanner, displayGamePage } from "./game-page.js";
+
 
 // uncomment me
-//displayRules();
+displayRules();
 
-displayGamePage();
+
+// delete me
+//displayGamePage();
+//displayBanner();

@@ -13,19 +13,25 @@ const gameBoardObj = {
     box7: '',
     box8: '',
     box9: '',
+    resetBoard: function() {
+        this.box1 = '';
+        this.box2 = '';
+        this.box3 = '';
+        this.box4 = '';
+        this.box5 = '';
+        this.box6 = '';
+        this.box7 = '';
+        this.box8 = '';
+        this.box9 = '';
+    }
 };
-
+export { gameBoardObj };
 
 // functions
-function displayGamePage() { 
-    // rmove all content from divs names "content" and "banner"
-    const contentx = document.getElementById('content');
-    contentx.textContent = '';
+function displayBanner() { 
+    // top banner
     const bannerx = document.getElementById('banner');
     bannerx.textContent = '';
-
-
-    // top banner
     const scoreBanner = document.createElement('div');
     scoreBanner.classList.add('score-banner');
     scoreBanner.id = 'score-banner';
@@ -47,6 +53,13 @@ function displayGamePage() {
         //append to the div named "content"
         const banner = document.getElementById('banner');
         banner.appendChild(scoreBanner);
+}
+export { displayBanner };
+
+function displayGamePage() { 
+    // rmove all content from divs names "content" and "banner"
+    const contentx = document.getElementById('content');
+    contentx.textContent = '';
     // game board
     const gameBoard = document.createElement('div');
     gameBoard.classList.add('game-board');
@@ -244,7 +257,7 @@ function checkForTie() {
 function computerTurn() {
     console.log('computer turn')
     if (gameSettings.gameStatus === 'inProgress') {
-        if (gameSettings.difficulty === 'Easy') {
+        if (gameSettings.difficulty === 'easy') {
             console.log('easy turn made')
             let randomNum = Math.floor(Math.random() * 9) + 1;
             console.log("the random number is " + randomNum);

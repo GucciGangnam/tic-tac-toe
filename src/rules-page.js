@@ -3,6 +3,10 @@ import displaySettingsPage from './settings-page.js'
 
 // functions 
 function displayRules() { 
+    const content = document.getElementById('content');
+    content.textContent = '';
+    const banner = document.getElementById('banner');
+    banner.textContent = '';
     const rulesDiv = document.createElement('div');
     rulesDiv.classList.add('rules-div');
     rulesDiv.id = 'rules-div';
@@ -33,7 +37,6 @@ function displayRules() {
     okay.id = 'start-game-btn';
     okay.textContent = 'Okay';
     rulesDiv.appendChild(okay);
-    const content = document.getElementById('content');
     content.appendChild(rulesDiv);
     okay.addEventListener('click', () => {
         console.log('Okay Button Clicked');
@@ -41,4 +44,4 @@ function displayRules() {
         displaySettingsPage();
     });
 }
-export default displayRules;
+export { displayRules };

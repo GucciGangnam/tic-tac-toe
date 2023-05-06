@@ -147,3 +147,46 @@ html, body {
         background-color: rgba(255, 255, 255, 0.50);
         box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.60);
     }
+
+/* round over page */
+
+.round-over-div { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 10px;
+    padding: 1rem;
+}
+    .round-over-scores-div { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .play-again-button { 
+        background: rgba(255, 255, 255, 0.50);
+        border: none;
+        border-radius: 30px;
+        padding: 15px;
+        cursor: pointer;
+        font-size: large;
+    }
+        .play-again-button:hover { 
+            box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.60);
+        }
+    .quit-button { 
+        background: rgba(255, 255, 255, 0.50);
+        border: none;
+        border-radius: 30px;
+        padding: 15px;
+        cursor: pointer;
+        font-size: large;
+    }
+        .quit-button:hover { 
+            box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.60);
+        }
+    

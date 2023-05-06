@@ -1,14 +1,16 @@
 // imports 
 import { displayGamePage } from "./game-page.js";
 
-// game settings object
+// game settings object *********************** reset all settings to default
 const gameSettings = {
-    playerName: '',
-    playerMarker: '',
-    difficulty: '',
+    playerName: 'Test',
+    playerMarker: 'X',
+    computerMarker: 'O',
+    difficulty: 'Easy',
     playerScore: 0,
     computerScore: 0,
     round: 1,
+    gameStatus: 'inProgress',
 };
 export { gameSettings };
 
@@ -37,6 +39,7 @@ function displaySettingsPage() {
             xMarkerBtn.classList.add('selected');
             oMarkerBtn.classList.remove('selected');
             gameSettings.playerMarker = 'X';
+            gameSettings.computerMarker = 'O';
         });
         const oMarkerBtn = document.createElement('button');
         oMarkerBtn.classList.add('settingsBtn');
@@ -47,6 +50,7 @@ function displaySettingsPage() {
             oMarkerBtn.classList.add('selected');
             xMarkerBtn.classList.remove('selected');
             gameSettings.playerMarker = 'O';
+            gameSettings.computerMarker = 'X';
         });
     markerDiv.appendChild(xMarkerBtn);
     markerDiv.appendChild(oMarkerBtn);

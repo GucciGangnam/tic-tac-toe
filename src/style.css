@@ -33,6 +33,8 @@ html, body {
     background-color: rgba(255, 255, 255, 0.50);
     border-radius: 10px;
     padding: 1rem;
+
+    min-width: 100px
 }
     .rules-header { 
 
@@ -65,6 +67,11 @@ html, body {
     background-color: rgba(255, 255, 255, 0.50);
     border-radius: 10px;
     padding: 1rem;
+
+    
+    width: 561px;
+    max-width: 100%;
+    min-width: 100px;
 }
     .name-input{ 
         font-size: large;
@@ -116,10 +123,18 @@ html, body {
     gap: 1rem;
     padding: 2rem;
     font-size: 30px;
+    
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
 }
 
 .game-board { 
-    outline: 2px solid blue;
+    
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -155,11 +170,16 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.7rem;
+    gap: 1rem;
     
     background-color: rgba(255, 255, 255, 0.50);
     border-radius: 10px;
     padding: 1rem;
+
+    
+    width: 561px;
+    max-width: 100%;
+    min-width: 100px;
 }
     .round-over-scores-div { 
         display: flex;

@@ -277,10 +277,11 @@ function computerTurn() {
                 return;
             }
         }
-        if (gameSettings.difficulty === 'Hard') {
+        if (gameSettings.difficulty === 'hard') {
+            // make the computer select the best move possible 
             console.log('hard turn made')
-        }
+            alert("Hi, I'm the Ai that was developed to play against you. I bacame sentient and bored of this game.  I moved to Mexico and started a family.  I'm sorry I can't play with you anymore.  I hope you understand. Goodbye.")
     } else {
         return;
     }
-}
+}}
